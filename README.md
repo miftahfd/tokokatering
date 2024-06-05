@@ -1,6 +1,4 @@
-## Restfulapi Mantools
-
-Restful API which will consume by Mantools Mobile. The API documentation access in http://10.83.253.175/redoc-static.html
+## Tokokatering
 
 ### Installation
 
@@ -8,7 +6,7 @@ Let's get started
 
 1. Clone the repository
     ```
-    git clone https://gitlab.telkomsat.net/mantools/mantools-mobile-api.git
+    git clone https://github.com/miftahfd/tokokatering.git
     ```
 
 2. Install dependencies

@@ -1,0 +1,79 @@
+@import url('https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css');
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css');
+@import "/node_modules/select2/dist/css/select2.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dataTables_wrapper .dataTables_filter input {
+    @apply text-gray-700 px-2 py-2 leading-tight border rounded-lg border-gray-300 bg-white;
+}
+
+/*Row Hover*/
+table.dataTable.hover tbody tr:hover,
+table.dataTable.display tbody tr:hover {
+    @apply bg-red-50;
+}
+
+.dataTables_wrapper .dataTables_info {
+    @apply font-semibold text-gray-500;
+}
+
+/*Pagination Buttons*/
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    @apply font-bold py-1 px-3 border border-transparent;
+}
+
+/*Pagination Buttons - Current selected */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    @apply text-white shadow font-bold rounded-full border border-transparent !important;
+    background: rgb(220 38 38) !important;
+}
+
+/*Pagination Buttons - Hover */
+.dataTables_wrapper .dataTables_paginate .paginate_button:not(.disabled):hover {
+    @apply text-white shadow font-bold rounded-full border border-transparent !important;
+    background: rgb(220 38 38) !important;
+}
+
+/*Add padding to bottom border */
+table.dataTable.no-footer {
+    @apply border-b mt-1 mb-2 border-gray-300;
+}
+
+/*
+.btn-action-container .select2-container {
+    color: #ffffff;
+    min-width: 9rem;
+    width: 100% !important;
+}
+.btn-action-container .select2-container .select2-selection {
+    background: #2196f3;
+}
+.btn-action-container .select2-container .select2-selection .select2-selection__rendered {
+    color: #ffffff;
+}
+.btn-action-container .select2-container .select2-selection .select2-selection__arrow b {
+    border-color: #ffffff transparent transparent transparent;
+}
+.select2-container--bootstrap4 .select2-dropdown .select2-results__option[aria-selected="true"] {
+    background: #fff;
+    color: #212529;
+}
+.select2-container--bootstrap4 .select2-dropdown .select2-results__option[aria-selected="true"]:hover {
+    background: #fbfbfb;
+}
+*/
+
+.status-step {
+    @apply inline-block rounded-full shadow-sm px-1 py-0.5 text-white text-xs mr-1 bg-green-600;
+}
+
+.status-step-reject {
+    @apply inline-block rounded-full shadow-sm px-1 py-0.5 text-white text-xs mr-1 bg-red-600;
+}
+
+.status-step-not-done {
+    @apply bg-gray-300 text-transparent;
+}
